@@ -14,6 +14,7 @@ namespace CalculatorApp
     {
         private double result;
         private string operationPerformed;
+        private bool isOperationPerformed;
 
         public Calculator()
         {
@@ -79,6 +80,7 @@ namespace CalculatorApp
         {
             result = 0;
             operationPerformed = "";
+            isOperationPerformed = false;
         }
 
         private void Button_Click(object sender, EventArgs e)
@@ -91,6 +93,8 @@ namespace CalculatorApp
             Button button = (Button)sender;
 
             this.txtResult.Text = this.txtResult.Text + button.Text;
+
+            isOperationPerformed = false;
         }
 
         private void Operator_Click(object sender, EventArgs e)
@@ -100,6 +104,8 @@ namespace CalculatorApp
             operationPerformed = button.Text;
 
             result = Double.Parse(this.txtResult.Text);
+
+            isOperationPerformed = true;
         }
     }
 }
