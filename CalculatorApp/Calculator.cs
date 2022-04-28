@@ -39,6 +39,29 @@ namespace CalculatorApp
 
             this.btnClearEntry.Click += BtnClearEntry_Click;
             this.btnClear.Click += BtnClear_Click;
+
+            this.btnEquals.Click += BtnEquals_Click;
+        }
+
+        private void BtnEquals_Click(object sender, EventArgs e)
+        {
+            switch(operationPerformed)
+            {
+                case "+":
+                    this.txtResult.Text = (result + Double.Parse(this.txtResult.Text)).ToString();
+                    break;
+                case "-":
+                    this.txtResult.Text = (result - Double.Parse(this.txtResult.Text)).ToString();
+                    break;
+                case "*":
+                    this.txtResult.Text = (result * Double.Parse(this.txtResult.Text)).ToString();
+                    break;
+                case "/":
+                    this.txtResult.Text = (result / Double.Parse(this.txtResult.Text)).ToString();
+                    break;
+                default:
+                    break;
+            }
         }
 
         private void BtnClear_Click(object sender, EventArgs e)
