@@ -85,7 +85,7 @@ namespace CalculatorApp
 
         private void Button_Click(object sender, EventArgs e)
         {
-            if(this.txtResult.Text == "0")
+            if(this.txtResult.Text == "0" || isOperationPerformed)
             {
                 this.txtResult.Clear();
             }
@@ -106,6 +106,8 @@ namespace CalculatorApp
             result = Double.Parse(this.txtResult.Text);
 
             isOperationPerformed = true;
+
+            lblCurrentOperation.Text = String.Format("{0} {1}", result, operationPerformed);
         }
     }
 }

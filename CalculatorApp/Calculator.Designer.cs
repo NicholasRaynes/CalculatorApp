@@ -48,7 +48,7 @@
             this.btnDecimal = new System.Windows.Forms.Button();
             this.btnZero = new System.Windows.Forms.Button();
             this.txtResult = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblCurrentOperation = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnSeven
@@ -241,15 +241,14 @@
             this.txtResult.Text = "0";
             this.txtResult.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // label1
+            // lblCurrentOperation
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(10, 10);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(66, 24);
-            this.label1.TabIndex = 25;
-            this.label1.Text = "label1";
+            this.lblCurrentOperation.AutoSize = true;
+            this.lblCurrentOperation.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCurrentOperation.Location = new System.Drawing.Point(10, 10);
+            this.lblCurrentOperation.Name = "lblCurrentOperation";
+            this.lblCurrentOperation.Size = new System.Drawing.Size(0, 24);
+            this.lblCurrentOperation.TabIndex = 25;
             // 
             // Calculator
             // 
@@ -257,7 +256,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(367, 244);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblCurrentOperation);
             this.Controls.Add(this.txtResult);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.btnEquals);
@@ -309,7 +308,7 @@
         private System.Windows.Forms.Button btnDecimal;
         private System.Windows.Forms.Button btnZero;
         private System.Windows.Forms.TextBox txtResult;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblCurrentOperation;
     }
 }
 
