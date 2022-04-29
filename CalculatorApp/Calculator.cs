@@ -32,6 +32,7 @@ namespace CalculatorApp
             this.btnSeven.Click += Button_Click;
             this.btnEight.Click += Button_Click;
             this.btnNine.Click += Button_Click;
+            this.btnDecimal.Click += Button_Click;
 
             this.btnDivide.Click += Operator_Click;
             this.btnMultiply.Click += Operator_Click;
@@ -90,11 +91,20 @@ namespace CalculatorApp
                 this.txtResult.Clear();
             }
 
+            isOperationPerformed = false;
+
             Button button = (Button)sender;
 
-            this.txtResult.Text = this.txtResult.Text + button.Text;
-
-            isOperationPerformed = false;
+            if(button.Text == ".")
+            {
+                if(!this.txtResult.Text.Contains("."))
+                {
+                    this.txtResult.Text = this.txtResult.Text + button.Text;
+                }
+            }else
+            {
+                this.txtResult.Text = this.txtResult.Text + button.Text;
+            }
         }
 
         private void Operator_Click(object sender, EventArgs e)
