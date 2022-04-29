@@ -246,6 +246,7 @@
             // 
             this.lblCurrentOperation.AutoSize = true;
             this.lblCurrentOperation.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCurrentOperation.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.lblCurrentOperation.Location = new System.Drawing.Point(10, 10);
             this.lblCurrentOperation.Name = "lblCurrentOperation";
             this.lblCurrentOperation.Size = new System.Drawing.Size(0, 24);
