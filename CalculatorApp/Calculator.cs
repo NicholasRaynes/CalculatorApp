@@ -64,6 +64,10 @@ namespace CalculatorApp
                 default:
                     break;
             }
+
+            result = Double.Parse(this.txtResult.Text);
+
+            lblCurrentOperation.Text = "";
         }
 
         private void BtnClear_Click(object sender, EventArgs e)
