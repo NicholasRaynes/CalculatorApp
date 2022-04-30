@@ -111,13 +111,26 @@ namespace CalculatorApp
         {
             Button button = (Button)sender;
 
-            operationPerformed = button.Text;
+            if(result != 0)
+            {
+                btnEquals.PerformClick();
 
-            result = Double.Parse(this.txtResult.Text);
+                operationPerformed = button.Text;
 
-            isOperationPerformed = true;
+                isOperationPerformed = true;
 
-            lblCurrentOperation.Text = String.Format("{0} {1}", result, operationPerformed);
+                lblCurrentOperation.Text = String.Format("{0} {1}", result, operationPerformed);
+            }
+            else
+            {
+                operationPerformed = button.Text;
+
+                result = Double.Parse(this.txtResult.Text);
+
+                isOperationPerformed = true;
+
+                lblCurrentOperation.Text = String.Format("{0} {1}", result, operationPerformed);
+            }
         }
     }
 }
