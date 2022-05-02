@@ -17,6 +17,9 @@ using System.Windows.Forms;
 
 namespace CalculatorApp
 {
+    /// <summary>
+    /// This class represents a Windows calculator application.
+    /// </summary>
     public partial class Calculator : Form
     {
         private double result;
