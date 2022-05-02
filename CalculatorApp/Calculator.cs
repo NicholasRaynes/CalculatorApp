@@ -1,4 +1,11 @@
-﻿using System;
+﻿/*
+ * Name: Nicholas Raynes
+ * Version: 0.0.1
+ * Description: A simple Windows Form calculator application. 
+ * (Roughly based on the Windows calculator.)
+ */
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
