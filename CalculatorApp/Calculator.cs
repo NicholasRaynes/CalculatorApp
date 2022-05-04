@@ -58,6 +58,9 @@ namespace CalculatorApp
             this.btnEquals.Click += BtnEquals_Click;
         }
 
+        /// <summary>
+        /// Handles the click event for the btnEquals control.
+        /// </summary>
         private void BtnEquals_Click(object sender, EventArgs e)
         {
             switch(operationPerformed)
