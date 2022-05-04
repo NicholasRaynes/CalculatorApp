@@ -26,6 +26,9 @@ namespace CalculatorApp
         private string operationPerformed;
         private bool isOperationPerformed;
 
+        /// <summary>
+        /// Initializes an instance of the Calculator class.
+        /// </summary>
         public Calculator()
         {
             InitializeComponent();
