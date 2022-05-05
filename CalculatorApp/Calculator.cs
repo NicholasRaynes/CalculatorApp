@@ -86,6 +86,9 @@ namespace CalculatorApp
             lblCurrentOperation.Text = "";
         }
 
+        /// <summary>
+        /// Handles the click event for the btnClear control.
+        /// </summary>
         private void BtnClear_Click(object sender, EventArgs e)
         {
             this.txtResult.Text = "0";
