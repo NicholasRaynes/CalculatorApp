@@ -95,6 +95,9 @@ namespace CalculatorApp
             result = 0;
         }
 
+        /// <summary>
+        /// Handles the click event for the btnClearEntry control.
+        /// </summary>
         private void BtnClearEntry_Click(object sender, EventArgs e)
         {
             this.txtResult.Text = "0";
