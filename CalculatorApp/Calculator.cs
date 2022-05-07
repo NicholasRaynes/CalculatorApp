@@ -103,6 +103,9 @@ namespace CalculatorApp
             this.txtResult.Text = "0";
         }
 
+        /// <summary>
+        /// Handles the load event for this Calculator form.
+        /// </summary>
         private void Calculator_Load(object sender, EventArgs e)
         {
             result = 0;
