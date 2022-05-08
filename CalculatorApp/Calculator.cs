@@ -113,6 +113,9 @@ namespace CalculatorApp
             isOperationPerformed = false;
         }
 
+        /// <summary>
+        /// Handles the click event for all the button controls.
+        /// </summary>
         private void Button_Click(object sender, EventArgs e)
         {
             if(this.txtResult.Text == "0" || isOperationPerformed)
