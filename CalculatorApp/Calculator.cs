@@ -139,6 +139,9 @@ namespace CalculatorApp
             }
         }
 
+        /// <summary>
+        /// Handles the click event for all the operator button controls.
+        /// </summary>
         private void Operator_Click(object sender, EventArgs e)
         {
             Button button = (Button)sender;
