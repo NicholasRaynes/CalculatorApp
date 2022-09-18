@@ -6,4 +6,5 @@ A simple Windows Form calculator application in C#. The calculator is roughly ba
 
 - Visual Studio
 - C# Programming Language
+- Windows Form Application
 
