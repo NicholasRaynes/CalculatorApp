@@ -5,6 +5,7 @@ A simple Windows Form calculator application in C#. The calculator is roughly ba
 <h2>Technology Utilized:</h2>
 
 - Visual Studio
-- C# Programming Language
-- Windows Form Application
+- C# Programming language
+- Windows Form pplication
+- Event driven programming
 
